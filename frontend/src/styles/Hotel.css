@@ -1,0 +1,135 @@
+
+.hotel{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hotel h1{
+    color: #FFFFFF;
+    font-size: 4vh;
+}
+.hotel h2{
+    font-size: 2vh;
+}
+.hotel h3{
+    font-size: 2vh;
+    margin-top: 1vh;
+}
+.hotel a{
+    color: #AA0000;
+    text-decoration: none;
+    font-size: 1.5vh;
+}
+.hotel p{
+    font-size: 1.5vh;
+}
+
+
+
+
+
+.hotel .card{
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 1vw;
+    margin-top: 0;
+    width: 50vh;
+    border-radius: 5vh;
+    margin-top: 5vh;
+    height: 60vh;
+    width: 60vw;
+    padding: 2vh;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1vh solid #AA0000;
+}
+.hotel .bg{
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    background-color: #AA0000;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+    height: 50vh;
+    width: 110vw;
+    border-radius: 0 0 50% 50%;
+    animation: TopSlide;
+    animation-duration: 1s;
+}
+@keyframes TopSlide{
+    from{top: -60%;}
+    to{top: 0%;}
+}
+.hotel .Left{
+    width: 40vh;
+    margin-right: 0.5vw;
+}
+.hotel .Right{
+    width: 30vw;
+}
+
+.hotel .Image{
+    border-radius: 5vh;
+    width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.hotel .Check{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Check .CheckInTop{
+    color: #FFFFFF;
+    width: 7rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vh 0.5vh 0 0;
+    background-color: #AA0000;
+}
+.Check .CheckInBot{
+    border-style: solid;
+    border-width: 0.1rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0.5vh 0.5vh;
+}
+
+.Check .CheckOutTop{
+    color: #FFFFFF;
+    width: 7rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vh 0.5vh 0 0;
+    background-color: #AA0000;
+}
+.Check .CheckOutBot{
+    border-style: solid;
+    border-width: 0.1rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 0.5vh 0.5vh;
+}
+
+.Address{
+    display: flex;
+    align-items: center;
+}
+.Address .Location{
+    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23aa0000' d='M20.891 2.006L20.997 2l.13.008l.09.016l.123.035l.107.046l.1.057l.09.067l.082.075l.052.059l.082.116l.052.096q.07.15.09.316l.005.106q0 .113-.024.22l-.035.123l-6.532 18.077A1.55 1.55 0 0 1 14 22.32a1.55 1.55 0 0 1-1.329-.747l-.065-.127l-3.352-6.702l-6.67-3.336a1.55 1.55 0 0 1-.898-1.259L1.68 10c0-.56.301-1.072.841-1.37l.14-.07l18.017-6.506l.106-.03l.108-.018z'/%3E%3C/svg%3E");
+}
